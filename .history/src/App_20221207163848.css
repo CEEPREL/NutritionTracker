@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+body {
+  font-family: 'Oxygen', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #202020;
+  color: #F2F2F2;
+}
+
+.container {
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+  
+}
+
+.contact-card {
+  max-height: 150px;
+  padding:1rem;
+  border-radius: 8px;
+  background-color: #2f2f2f;
+  display: flex;
+  align-items: top;
+  justify-content: left;
+  box-shadow: 10px 10px 25px -18px rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+}
+
+.user-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 13px;
+  font-size: 11px;
+}
+
+.contact-list {
+  display: grid;
+  grid-gap: 0.6rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.user-details button {
+  border-radius: 3px;
+  border-width: 0;
+  width: 7rem;
+  cursor: pointer;
+  padding: 7px 12px;  
+  line-height: 3px;
+  font-weight: 300;
+  margin-top: 10px;
+  font-size: 11px;
+  
+}
+
+
+

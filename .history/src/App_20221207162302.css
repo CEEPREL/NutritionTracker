@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242424;
+  color: #F2F2F2;
+  min-height: 100vh;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.container {
+  margin-top: 1rem;
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+  color: white;
+}
+
+h1, h2, h3 {
+  margin: 0.5rem;
+}
+
+h1{
+  font-size: 1.5rem;
+}
+h2{
+  font-size: 1.2rem;
+}
+h3{
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+}
+
+.row {
+  display:flex;
+  justify-content:space-between;
+}
+
+.col-1 {
+  flex:1;
+}
+
+
+.col-2 {
+  flex:2;
+}
+
+ 
