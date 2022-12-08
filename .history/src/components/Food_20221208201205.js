@@ -6,9 +6,8 @@ const Food = ({ id, name, size, protein, image }) => {
             <div className="food-name">
                 <h4 ><strong>{name}</strong></h4>
             </div>
-            
+            <br></br>
             <img className="small" src={image} alt={name}></img>
-            
             <div className="food-nutrients">
                 <p>Serving: {size}</p>
                 <p>Protein: {protein}</p>

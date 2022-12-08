@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -71,8 +71,8 @@ body {
 }
 
 .food-card {
-  min-height:7rem;
-  min-width:8rem;
+  min-height:8rem;
+  min-width:9rem;
 
   border-radius: 6px;
   background-color: #4954ad;
@@ -82,20 +82,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: space-between;
+  justify-content: ;
   flex: 1;
   cursor: pointer;
   
 }
 
-.food-name {
-  margin-bottom: 1rem;
-}
-
-.food-nutrients {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
 .new-card{
   min-height:140px;
   min-width:  18rem;

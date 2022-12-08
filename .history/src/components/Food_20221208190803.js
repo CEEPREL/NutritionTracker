@@ -3,13 +3,10 @@ import React from 'react'
 const Food = ({ id, name, size, protein, image }) => {
     return (
         <div className="food-card">
-            <div className="food-name">
-                <h4 ><strong>{name}</strong></h4>
-            </div>
-            
-            <img className="small" src={image} alt={name}></img>
-            
-            <div className="food-nutrients">
+            <h3>{name}</h3>
+            <br></br>
+            {/* <img className="small" src={image} alt={name}></img> */}
+            <div className="mb-1">
                 <p>Serving: {size}</p>
                 <p>Protein: {protein}</p>
             </div>

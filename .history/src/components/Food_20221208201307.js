@@ -5,10 +5,9 @@ const Food = ({ id, name, size, protein, image }) => {
         <div className="food-card">
             <div className="food-name">
                 <h4 ><strong>{name}</strong></h4>
-            </div>
             
             <img className="small" src={image} alt={name}></img>
-            
+            </div>
             <div className="food-nutrients">
                 <p>Serving: {size}</p>
                 <p>Protein: {protein}</p>
