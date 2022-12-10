@@ -25,7 +25,7 @@ export default function CalculateNutrients({ mealItems, onAdd, onRemove }) {
             <div className="totals-col-1">{item.size}g</div>
             
             <div className="totals-col-1" style={{textAlign: 'right'}}>
-              <small> {item.qty} x {item.protein} </small>
+              {item.qty} X {item.protein}
             </div>
             <div className="totals-btns">
               <button onClick={() => onRemove(item)} className="food-remove">-</button>

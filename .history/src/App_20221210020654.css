@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1400px;
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -212,7 +212,7 @@ body {
   padding:0.3rem;
 }
 .totals-col-1 {
-  flex-basis: 15%;
+  flex-basis: 20%;
   padding:0.3rem;
 }
 .totals-btns {
