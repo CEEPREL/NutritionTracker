@@ -23,17 +23,17 @@ export default function CalculateNutrients({ mealItems, onAdd, onRemove }) {
           <div className="totals-col-1">Protein</div>
           <div className="totals-col-1">Serving</div>
           <div className="totals-col-1" style={{ textAlign: 'center' }}> <p>Qty</p></div>
-          <div className="totals-col-1" style={{ textAlign: 'right' }}>Amount</div>
+          
           <br></br>
 
         </div>
         <hr />
         {mealItems.map((item) =>
           <div key={item.id} className="totals-row">
-            <div className="totals-col-2">{item.name}</div>
+          
+            <div className="totals-col-2"><small>x{item.qty}</small> {item.name}</div>
             <div className="totals-col-1">{item.protein}</div>
             <div className="totals-col-1">{item.size}</div>
-            <div className="totals-col-1" style={{ textAlign: 'left' }}> <small>x{item.qty}</small></div>
             <div className="totals-btns">
               <button onClick={() => onRemove(item)} className="food-remove">-</button>
               <button onClick={() => onAdd(item)} className="food-add">+</button>
