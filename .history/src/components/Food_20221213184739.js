@@ -6,12 +6,10 @@ export default function Food({ handleDeleteFoodItem, item, food, onAdd, onRemove
         <div className="food-card">
             <div className="food-name">
                 <h4 ><strong>{food.name}</strong></h4>
-                
                 <MdDeleteForever 
-                onClick = {() => handleDeleteFoodItem(food.id)} 
+                onClick = {() => handleDeleteFoodItem(id)} 
                 className="delete-icon" 
                 size="1.3em"/>
-                <button onClick={"handleDeleteFoodItem"}>qwer</button>
                 <p><small>Per <b>{food.size}g </b>serving </small></p>
             </div>
 

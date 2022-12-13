@@ -3,7 +3,7 @@ import AddFood from './AddFood';
 import Food from './Food';
 import SearchFood from './SearchFood';
 
-export default function FoodList({  food_data, mealItems, onAdd, onRemove, handleAddFoodItem, handleDeleteFoodItem }) {
+export default function FoodList({  food_data, mealItems, onAdd, onRemove, handleAddFoodItem, handleRemoveFoodItem }) {
     return (
         <>
             <SearchFood />
@@ -21,9 +21,9 @@ export default function FoodList({  food_data, mealItems, onAdd, onRemove, handl
                         key={food.id}
                         food={food}
                         item={mealItems.find((x) => x.id === food.id)}
-                        onAdd={onAdd}
+                        onAddToDailyMeals={onAdd}
                         onRemove={onRemove}
-                        handleDeleteFoodItem={handleDeleteFoodItem}
+                        onRemoveFoodItem={handleRemoveFoodItem}
                     />
                 )}
                 <div className="new-card">

@@ -125,7 +125,7 @@ function App() {
 
         <div className="col-left">
           <div className="wrapper-card-food-list">
-            <FoodList onAdd={onAdd} onRemove={onRemove} mealItems={mealItems} food_data={newFoodItems} handleAddFoodItem={handleAddFoodItem} handleDeleteFoodItem={handleDeleteFoodItem} />
+            <FoodList onAdd={onAdd} onRemove={onRemove} mealItems={mealItems} food_data={newFoodItems} handleAddFoodItem={handleAddFoodItem} handle />
           </div>
         </div>
         <div className="col-right">

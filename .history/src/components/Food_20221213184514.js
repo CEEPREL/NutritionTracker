@@ -1,17 +1,11 @@
 import React from 'react'
-import { MdDeleteForever } from 'react-icons/md';
+import {MdDeleteForever} from 'react-icons/md';
 
-export default function Food({ handleDeleteFoodItem, item, food, onAdd, onRemove }) {
+export default function Food({ item, food, onAdd, onRemove }) {
     return (
         <div className="food-card">
             <div className="food-name">
                 <h4 ><strong>{food.name}</strong></h4>
-                
-                <MdDeleteForever 
-                onClick = {() => handleDeleteFoodItem(food.id)} 
-                className="delete-icon" 
-                size="1.3em"/>
-                <button onClick={"handleDeleteFoodItem"}>qwer</button>
                 <p><small>Per <b>{food.size}g </b>serving </small></p>
             </div>
 
@@ -40,11 +34,11 @@ export default function Food({ handleDeleteFoodItem, item, food, onAdd, onRemove
                         </button>
                     </div>
                 ) : (
-
+                    
                     <button onClick={() => onAdd(food)} className="add-btn">Add meal</button>
                 )}
             </div>
-        </div>
+        </div >
     )
 }
 

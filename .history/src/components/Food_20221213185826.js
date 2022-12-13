@@ -11,7 +11,7 @@ export default function Food({ handleDeleteFoodItem, item, food, onAdd, onRemove
                 onClick = {() => handleDeleteFoodItem(food.id)} 
                 className="delete-icon" 
                 size="1.3em"/>
-                <button onClick={"handleDeleteFoodItem"}>qwer</button>
+                <button onClick={handleDeleteFoodItem(id)}>qwer</button>
                 <p><small>Per <b>{food.size}g </b>serving </small></p>
             </div>
 

@@ -56,9 +56,8 @@ function App() {
     setNewFoodItems([...newFoodItems, food]); //'
     console.log(newFoodItems)
   };
-  const handleDeleteFoodItem = (id) => {
-    const removeFoodItem = newFoodItems.filter((food) => food.id !== id);
-    setNewFoodItems(removeFoodItem);
+  const handleDeleteFoodItem = () => {
+    const
   
   }; //}
 
@@ -125,7 +124,7 @@ function App() {
 
         <div className="col-left">
           <div className="wrapper-card-food-list">
-            <FoodList onAdd={onAdd} onRemove={onRemove} mealItems={mealItems} food_data={newFoodItems} handleAddFoodItem={handleAddFoodItem} handleDeleteFoodItem={handleDeleteFoodItem} />
+            <FoodList onAdd={onAdd} onRemove={onRemove} mealItems={mealItems} food_data={newFoodItems} handleAddFoodItem={handleAddFoodItem} />
           </div>
         </div>
         <div className="col-right">
