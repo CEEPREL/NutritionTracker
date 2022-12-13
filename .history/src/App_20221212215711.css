@@ -147,7 +147,7 @@ body {
   gap:0.15rem;
   color: rgb(255, 255, 255);
   padding-left: 0.3rem;
-  padding-right: 0.3rem;
+  padding-right: 0.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-radius: 0px;
@@ -273,7 +273,7 @@ body {
     justify-content: space-between;
     gap:0.1rem;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1250px) {
   .col-left, .col-right {   
     width: 100%;
     padding: 0;

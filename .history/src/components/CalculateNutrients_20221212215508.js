@@ -108,7 +108,7 @@ export default function CalculateNutrients({ mealItems, countMealItems, onAdd, o
 
             {/* Remaining */}
             <div className="totals-row">
-              <div className="totals-col-3"><small>Remaining</small></div>
+              <div className="totals-col-3"><small>Remaining</small></small></div>
               <div className="totals-col-1" style={{ textAlign: 'left' }}></div>
 
               <div className="">
