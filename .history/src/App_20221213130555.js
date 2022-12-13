@@ -49,7 +49,7 @@ function App() {
       id: nanoid(),
       name: "qwerty",
       size: "200",
-      protein: "20",
+      protein: "2g",
       category: "lunch"
     }
     // food_data.push(food);

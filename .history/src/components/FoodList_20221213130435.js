@@ -3,7 +3,7 @@ import AddFood from './AddFood';
 import Food from './Food';
 import SearchFood from './SearchFood';
 
-export default function FoodList({ newFoodItems, food_data, mealItems, onAdd, onRemove, handleAddFoodItem }) {
+export default function FoodList({ newFoodItemsfood_data, mealItems, onAdd, onRemove, handleAddFoodItem }) {
     return (
         <>
             <SearchFood />

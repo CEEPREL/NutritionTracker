@@ -48,8 +48,8 @@ function App() {
     const food = {
       id: nanoid(),
       name: "qwerty",
-      size: "200",
-      protein: "20",
+      size: "200ml",
+      protein: "25g",
       category: "lunch"
     }
     // food_data.push(food);
