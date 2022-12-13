@@ -66,19 +66,9 @@ body {
   margin-bottom: 1rem;
   
 }
-.wrapper-card-food-list {
-  height:38.7rem;
+height:800px;
   overflow:scroll;
   overflow-x:hidden;
-  background-color: #35363a;
-  padding: 1rem;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-  
-}
-/* height:800px;
-  overflow:scroll;
-  overflow-x:hidden; */
 .foodList {
   /* display: flex;
   flex-wrap: wrap;

@@ -110,7 +110,7 @@ function App() {
 
   return (
     <div className="container">
-      {/* <Header countMealItems={mealItems.length} /> */}
+      <Header countMealItems={mealItems.length} />
 
       <div className="wrapper-card">
         <h3>Wednesday, 7th December 2022</h3>
@@ -119,7 +119,7 @@ function App() {
       <div className="row">
 
         <div className="col-left">
-          <div className="wrapper-card-food-list">
+          <div className="wrapper-card">
             <FoodList onAdd={onAdd} onRemove={onRemove} mealItems={mealItems} food_data={newFoodItems} handleAddFoodItem={handleAddFoodItem} />
           </div>
         </div>

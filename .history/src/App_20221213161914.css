@@ -66,10 +66,7 @@ body {
   margin-bottom: 1rem;
   
 }
-.wrapper-card-food-list {
-  height:38.7rem;
-  overflow:scroll;
-  overflow-x:hidden;
+.wrapper-card-food {
   background-color: #35363a;
   padding: 1rem;
   border-radius: 6px;

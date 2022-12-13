@@ -110,7 +110,7 @@ function App() {
 
   return (
     <div className="container">
-      {/* <Header countMealItems={mealItems.length} /> */}
+      <Header countMealItems={mealItems.length} />
 
       <div className="wrapper-card">
         <h3>Wednesday, 7th December 2022</h3>
