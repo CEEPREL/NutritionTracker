@@ -12,6 +12,7 @@ export default function FoodList({  food_data, mealItems, onAdd, onRemove, handl
                 <button>Breakfast</button>
                 <button>Lunch</button>
                 <button>Dinner</button>
+
             </div>
             <br></br>
             <div className="foodList">
@@ -28,6 +29,7 @@ export default function FoodList({  food_data, mealItems, onAdd, onRemove, handl
                 <div className="new-card">
                     <AddFood
                         handleAddFoodItem={handleAddFoodItem} />
+                   
                 </div>
             </div>
         </>

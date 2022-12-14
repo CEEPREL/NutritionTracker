@@ -28,6 +28,7 @@ export default function FoodList({  food_data, mealItems, onAdd, onRemove, handl
                 <div className="new-card">
                     <AddFood
                         handleAddFoodItem={handleAddFoodItem} />
+                
                 </div>
             </div>
         </>
