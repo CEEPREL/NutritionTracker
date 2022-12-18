@@ -39,11 +39,7 @@ export default function FetchFoodApi() {
         setIsOpen(false);
     }
     function fetchFoodData() {
-        
-    }
-
-    const fetchData = () => {
-        fetch(`https://api.nal.usda.gov/fdc/v1/foods/search?api_key=${API_KEY}&query=${typedFood}&pageSize=5`)
+        fetch(`https://api.nal.usda.gov/fdc/v1/foods/search?api_key=${API_KEY}&${typedFood}`)
         .then((response) => response.json())
         .then((data) => {
             // setFetchedFood(data);
@@ -52,11 +48,15 @@ export default function FetchFoodApi() {
         .catch((err) => {
             console.log(err.message);
         });
+    }
+
+    const fetchData = () => {
+
     };
 
 
     useEffect(() => {
-        
+        fetchFoodData()
     }, []);
 
     return (
@@ -88,7 +88,7 @@ export default function FetchFoodApi() {
                     setTypedFood(event.target.value)
                 }}>
             </input>
-            <button onClick={fetchData}>Fetch food</button>
+            <button onClick={() => fetchFoodData())}>Fetch food</button>
 
         </div >
     )

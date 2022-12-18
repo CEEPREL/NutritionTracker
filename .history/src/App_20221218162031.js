@@ -162,7 +162,7 @@ function App() {
       </div>
       <br></br>
       <div className="container">
-        <FetchFoodApi/>
+        {/* <FetchFoodApi/> */}
 
 
       </div> {/* container end */}

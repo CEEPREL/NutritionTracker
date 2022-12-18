@@ -38,25 +38,16 @@ export default function FetchFoodApi() {
     function closeModal() {
         setIsOpen(false);
     }
-    function fetchFoodData() {
-        
+    function fetchFoodData(typedFood) {
+        fetch(`https://api.nal.usda.gov/fdc/v1/foods/search?api_key=${API_KEY}&${typedFood}`)
+            .then((response) => response.json())
+            .then((data) => {
+                setFetchedFood(data);
+            }
+            )
     }
-
-    const fetchData = () => {
-        fetch(`https://api.nal.usda.gov/fdc/v1/foods/search?api_key=${API_KEY}&query=${typedFood}&pageSize=5`)
-        .then((response) => response.json())
-        .then((data) => {
-            // setFetchedFood(data);
-            console.log(data)
-        })
-        .catch((err) => {
-            console.log(err.message);
-        });
-    };
-
-
     useEffect(() => {
-        
+        fetchFoodData();
     }, []);
 
     return (
@@ -82,13 +73,10 @@ export default function FetchFoodApi() {
             </Modal>
 
             <br></br>
-            <input
-                placeholder="Type food to load..."
-                onChange={(event) => {
-                    setTypedFood(event.target.value)
-                }}>
-            </input>
-            <button onClick={fetchData}>Fetch food</button>
+            <input onChange={(event) => {
+                setTypedFood(event.target.value)
+            }} placeholder="Type food to load..."></input>
+            <button onClick={() => { fetchFoodData(typedFood) }}>Fetch food</button>
 
         </div >
     )

@@ -51,7 +51,7 @@ function App() {
     setFoods(localStorage.getItem('foods') ? JSON.parse(localStorage.getItem('foods'))
       : []
     );
-  }, []);
+  }, [foods]);
   // Add an item from Food List using add meal btn to right column calculate nutirients tab
   const onAdd = (meal) => { //get a meal and add to mealItems
     const exists = mealItems.find((x) => x.id === meal.id);
@@ -162,7 +162,7 @@ function App() {
       </div>
       <br></br>
       <div className="container">
-        <FetchFoodApi/>
+        {/* <FetchFoodApi/> */}
 
 
       </div> {/* container end */}

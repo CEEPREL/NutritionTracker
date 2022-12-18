@@ -39,24 +39,24 @@ export default function FetchFoodApi() {
         setIsOpen(false);
     }
     function fetchFoodData() {
-        
+
     }
 
     const fetchData = () => {
-        fetch(`https://api.nal.usda.gov/fdc/v1/foods/search?api_key=${API_KEY}&query=${typedFood}&pageSize=5`)
-        .then((response) => response.json())
-        .then((data) => {
-            // setFetchedFood(data);
-            console.log(data)
-        })
-        .catch((err) => {
-            console.log(err.message);
-        });
+
     };
 
 
     useEffect(() => {
-        
+        fetch(`https://api.nal.usda.gov/fdc/v1/foods/search?api_key=${API_KEY}&${typedFood}`)
+            .then((response) => response.json())
+            .then((data) => {
+                // setFetchedFood(data);
+                console.log(data)
+            })
+            .catch((err) => {
+                console.log(err.message);
+            });
     }, []);
 
     return (
