@@ -32,18 +32,13 @@ export default function CalculateNutrients({ mealItems, countMealItems, onAdd, o
       {
         mealItems.length === 0 ? <div>
         <div className="totals-row"> {/* Title names for table like look */}
+              <div className="totals-btns"><button className="food-remove"></button>
+                <button className="food-add"></button></div>
               <div className="totals-col-3"><small></small>Name </div>
               <div className="totals-col-1" style={{ textAlign: 'right' }}><small>Prot</small></div>
               <div className="totals-col-1" style={{ textAlign: 'right' }}><small>Cal</small></div>
               <div className="totals-col-1" style={{ textAlign: 'right' }}><small>Serv</small></div>
             </div>
-            <div className="totals-row">
-                <div className="totals-btns" >
-                  
-                </div>
-                <div className="" style={{ textAlign: 'left' }}>No meals added Yet</div>
-
-              </div>
         </div> :
           <div>
             <div className="totals-row"> {/* Title names for table like look */}

@@ -32,17 +32,21 @@ export default function CalculateNutrients({ mealItems, countMealItems, onAdd, o
       {
         mealItems.length === 0 ? <div>
         <div className="totals-row"> {/* Title names for table like look */}
+              <div className="totals-btns"></div>
               <div className="totals-col-3"><small></small>Name </div>
               <div className="totals-col-1" style={{ textAlign: 'right' }}><small>Prot</small></div>
               <div className="totals-col-1" style={{ textAlign: 'right' }}><small>Cal</small></div>
               <div className="totals-col-1" style={{ textAlign: 'right' }}><small>Serv</small></div>
             </div>
-            <div className="totals-row">
+            <div key={item.id} className="totals-row">
                 <div className="totals-btns" >
-                  
+                  <button onClick={() => onRemove(item)} className="food-remove">-</button>
+                  <button onClick={() => onAdd(item)} className="food-add">+</button>
                 </div>
-                <div className="" style={{ textAlign: 'left' }}>No meals added Yet</div>
-
+                <div className="totals-col-3" style={{ textAlign: 'left' }}><small>x{item.qty}</small> {item.name}</div>
+                <div className="totals-col-1" style={{ textAlign: 'right' }}>{item.protein * item.qty}g</div>
+                <div className="totals-col-1" style={{ textAlign: 'right' }}>{item.calories * item.qty}g</div>
+                <div className="totals-col-1" style={{ textAlign: 'right' }}>{item.serving * item.qty}</div>
               </div>
         </div> :
           <div>
