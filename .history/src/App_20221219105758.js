@@ -15,7 +15,7 @@ import AddFoodModal from './components/AddFoodModal';
 
 function App() {
   const [searchText, setSearchText] = useState('');
-  const [foods, setFoods] = useState(food_data_json);
+  const [foods, setFoods] = useState([food_data_json]);
   const [mealItems, setMealItems] = useState([]); //totalNutrients is [] empty array
 
   // Add an item from Food List using add meal btn to right column calculate nutirients tab
@@ -44,7 +44,7 @@ function App() {
 
   useEffect(() => {
     setFoods(localStorage.getItem('foods') ? JSON.parse(localStorage.getItem('foods'))
-      : (food_data_json)
+      : []
     );
   }, []);
   // Add an item from Food List using add meal btn to right column calculate nutirients tab

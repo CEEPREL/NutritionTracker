@@ -44,7 +44,7 @@ function App() {
 
   useEffect(() => {
     setFoods(localStorage.getItem('foods') ? JSON.parse(localStorage.getItem('foods'))
-      : (food_data_json)
+      : [food_data_json]
     );
   }, []);
   // Add an item from Food List using add meal btn to right column calculate nutirients tab

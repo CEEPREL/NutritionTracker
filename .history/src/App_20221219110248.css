@@ -78,6 +78,7 @@ body {
 }
 .wrapper-card-calculate-rightCol{
   min-height: 28rem;
+
   max-height:48.7rem;
   overflow:scroll;
   overflow-x:hidden;
