@@ -59,10 +59,9 @@ export default function CalculateNutrients({ mealItems, countMealItems, onAdd, o
             <hr style={{ marginBottom: '6px' }} />
 
             {/* Total row with boxes for cal, prot, sugar */}
-            <div className="total-food-nutrients" style={{ marginBottom: '22px', background: 'green' ? {totalCalories} > 1000 : '#1d2127'}}>
+            <div className="total-food-nutrients" style={{ marginBottom: '0px', background: 'green' ? {totalCalories} > 1000 : '#1d2127'}}>
 
               <div className="total-food-nutrients totals-col-2" style={{ background: '#1d2127' }}><p style={{ background: '#1d2127' }}><b>Total</b></p></div>
-              <p>Protein <b>{totalProtein}g</b></p>
               <p style={{ background: 'green' ? {totalCalories} > 1000 : '#1d2127'}}>Calories <b>{totalCalories}</b></p>
               <p>Sugar <b>{totalSugar}g</b></p>
             </div>
@@ -70,23 +69,24 @@ export default function CalculateNutrients({ mealItems, countMealItems, onAdd, o
             {/* Target row with boxes for cal, prot, sugar */}
             <div className="total-food-nutrients">
               <div className="total-food-nutrients totals-col-2" style={{ background: '#1d2127' }}><p style={{ background: '#1d2127' }}><b>Target</b></p></div>
-              <p>Protein <b>{targetProtein}g</b></p>
               <p>Calories <b>{targetCalories}</b></p>
+              <p>Protein <b>{targetProtein}g</b></p>
               <p>Sugar <b>{targetSugar}g</b></p>
             </div>
 
             {/* Remaining row with boxes for cal, prot, sugar */}
             <div className="total-food-nutrients">
               <div className="total-food-nutrients totals-col-2" style={{ background: '#1d2127' }}><p style={{ background: '#1d2127' }}><b>Remaining</b></p></div>
-              <p>Protein <b>{remainingProtein}g</b></p>
               <p>Calories <b>{remainingCalories}</b></p>
+              <p>Protein <b>{remainingProtein}g</b></p>
               <p>Sugar <b>{remainingSugar}g</b></p>
             </div>
 
+            <br></br>
 
             {/* Extra box info */}
-            {/* <span>Extra daily meals total info</span> */}
-            <div className="total-food-nutrients" style={{marginTop: '22px'}}>
+            <span>Extra daily meals total info</span>
+            <div className="total-food-nutrients">
               <p><small>Serving</small> <b>{totalServing}g</b></p>
               <p><small>Protein</small> <b>{totalProtein}g</b></p>
               <p><small>Carbs</small> <b>{totalProtein}g</b></p>

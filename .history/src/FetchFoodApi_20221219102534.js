@@ -48,7 +48,7 @@ export default function FetchFoodApi() {
             {fetchError && <p style={{ color: "red" }}>{`Error: ${fetchError}`}</p>}
 
             {fetchedFood ?
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "10px"}}>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "15px"}}>
                     {fetchedFood.map((result, index) => {
                         return (
                             <div style={{ display: "flex", flexWrap: "wrap", flex: '1'}}>
@@ -58,8 +58,8 @@ export default function FetchFoodApi() {
                                 /> */}
                                 <div style={{
                                     display: "flex", flexDirection: "column", flexWrap: "wrap",
-                                    minWidth: '12rem', maxWidth: '12rem', 
-                                    padding:'0.3rem', border: '1px solid black' }}>
+                                    minWidth: '14rem', maxWidth: '14rem', 
+                                    padding:'0.4rem', border: '1px solid black' }}>
                                     <br></br>
                                     {!typedFood === ' ' ? (
                                         <p>{typedFood}</p>

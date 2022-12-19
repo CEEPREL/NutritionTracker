@@ -77,8 +77,8 @@ body {
   /* 35363a */
 }
 .wrapper-card-calculate-rightCol{
-  min-height: 38rem;
-  max-height:38rem;
+  min-height: 28rem;
+  max-height:39rem;
   overflow:scroll;
   overflow-x:hidden;
   background-color: #2e3039;
@@ -88,8 +88,8 @@ body {
   /* 35363a */
 }
 .wrapper-card-food-list {
-  min-height: 38rem;
-  max-height:38rem;
+  min-height: 28rem;
+  max-height:48.7rem;
   overflow:scroll;
   overflow-x:hidden;
   background-color: #2e3039;

@@ -30,6 +30,10 @@ export default function FoodList({ food_data, mealItems, onAdd, onRemove, handle
                         handleDeleteFoodItem={handleDeleteFoodItem}
                     />
                 )}
+                <div className="new-card">
+                    <AddFood
+                        handleAddFoodItem={handleAddFoodItem} />
+                </div>
             </div>
         </>
     )

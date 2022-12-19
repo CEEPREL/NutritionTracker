@@ -89,7 +89,7 @@ body {
 }
 .wrapper-card-food-list {
   min-height: 38rem;
-  max-height:38rem;
+  max-height:39rem;
   overflow:scroll;
   overflow-x:hidden;
   background-color: #2e3039;

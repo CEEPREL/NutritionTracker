@@ -23,8 +23,8 @@ export default function Food({ handleDeleteFoodItem, item, food, onAdd, onRemove
             <div className="food-nutrients">
 
                 <p><small>Protein</small> <b>{food.protein}g</b>  </p>
-                <p><small>Calories</small>{food.calories}</p>
-                <p><small>Sugar</small>{food.sugar}</p>
+                <p><small>Calories</small> {food.calories}</p>
+                <p><small>Sugar</small> 3g</p>
 
             </div>
             <div>

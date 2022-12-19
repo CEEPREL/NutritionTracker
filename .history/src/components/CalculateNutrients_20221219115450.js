@@ -59,7 +59,7 @@ export default function CalculateNutrients({ mealItems, countMealItems, onAdd, o
             <hr style={{ marginBottom: '6px' }} />
 
             {/* Total row with boxes for cal, prot, sugar */}
-            <div className="total-food-nutrients" style={{ marginBottom: '22px', background: 'green' ? {totalCalories} > 1000 : '#1d2127'}}>
+            <div className="total-food-nutrients" style={{ marginBottom: '20px', background: 'green' ? {totalCalories} > 1000 : '#1d2127'}}>
 
               <div className="total-food-nutrients totals-col-2" style={{ background: '#1d2127' }}><p style={{ background: '#1d2127' }}><b>Total</b></p></div>
               <p>Protein <b>{totalProtein}g</b></p>
@@ -85,8 +85,8 @@ export default function CalculateNutrients({ mealItems, countMealItems, onAdd, o
 
 
             {/* Extra box info */}
-            {/* <span>Extra daily meals total info</span> */}
-            <div className="total-food-nutrients" style={{marginTop: '22px'}}>
+            <span>Extra daily meals total info</span>
+            <div className="total-food-nutrients">
               <p><small>Serving</small> <b>{totalServing}g</b></p>
               <p><small>Protein</small> <b>{totalProtein}g</b></p>
               <p><small>Carbs</small> <b>{totalProtein}g</b></p>

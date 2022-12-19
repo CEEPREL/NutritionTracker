@@ -86,7 +86,7 @@ export default function CalculateNutrients({ mealItems, countMealItems, onAdd, o
 
             {/* Extra box info */}
             {/* <span>Extra daily meals total info</span> */}
-            <div className="total-food-nutrients" style={{marginTop: '22px'}}>
+            <div className="total-food-nutrients" style={{marginTop:}}>
               <p><small>Serving</small> <b>{totalServing}g</b></p>
               <p><small>Protein</small> <b>{totalProtein}g</b></p>
               <p><small>Carbs</small> <b>{totalProtein}g</b></p>

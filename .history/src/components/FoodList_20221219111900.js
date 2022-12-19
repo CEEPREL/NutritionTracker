@@ -6,7 +6,7 @@ import Food from './Food';
 import SearchFood from './SearchFood';
 
 export default function FoodList({ food_data, mealItems, onAdd, onRemove, handleAddFoodItem, handleDeleteFoodItem }) {
-
+    
     return (
         <>
             <br></br>
@@ -30,6 +30,10 @@ export default function FoodList({ food_data, mealItems, onAdd, onRemove, handle
                         handleDeleteFoodItem={handleDeleteFoodItem}
                     />
                 )}
+                <div className="new-card">
+                    <AddFood
+                        handleAddFoodItem={handleAddFoodItem} />
+                </div>
             </div>
         </>
     )

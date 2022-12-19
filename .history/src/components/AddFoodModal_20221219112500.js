@@ -68,7 +68,7 @@ export default function AddFoodModal({ handleAddFoodItem }) {
                 style={customStyles}
                 contentLabel="Example Modal" >
                 <div className="modal-title">
-                    <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Add new food to list</h2>
+                    <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Add food to list</h2>
                     <button onClick={closeModal}>close</button>
                 </div>
 

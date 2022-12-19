@@ -89,7 +89,7 @@ function App() {
   }, []);
 
   return (
-    <div style={{display: 'flex', flexDirection: 'column'}}>
+    <div>
       <div className="container">
 
         <div className="wrapper-card">
@@ -127,11 +127,6 @@ function App() {
         </div> {/* container end */}
         
       </div> {/* row end */}
-      <footer style={{ color: 'rgb(95, 95, 95)', borderRadius: '0px', marginBottom: '1rem', marginLeft: '1rem' }}>
-          <br></br><br></br>
-          <small>Developed by <a href="https://github.com/Vasil1001">Vasil.</a></small>
-          <small>&nbsp;&nbsp;Illustration by Icons 8 from <a href="https://icons8.com/">Ouch!</a></small>
-        </footer>
     </div>
   );
 }

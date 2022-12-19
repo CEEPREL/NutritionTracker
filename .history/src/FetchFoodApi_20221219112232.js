@@ -58,8 +58,8 @@ export default function FetchFoodApi() {
                                 /> */}
                                 <div style={{
                                     display: "flex", flexDirection: "column", flexWrap: "wrap",
-                                    minWidth: '12rem', maxWidth: '12rem', 
-                                    padding:'0.3rem', border: '1px solid black' }}>
+                                    minWidth: '14rem', maxWidth: '14rem', 
+                                    padding:'0.4rem', border: '1px solid black' }}>
                                     <br></br>
                                     {!typedFood === ' ' ? (
                                         <p>{typedFood}</p>
