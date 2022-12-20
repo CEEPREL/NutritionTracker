@@ -1,14 +1,19 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from 'react';
+
 import './App.css';
 import './styles/searchFood.css';
+
 import food_data_json from './data';
 import CalculateNutrients from './components/CalculateNutrients';
 import FoodList from './components/FoodList';
+
 import { nanoid } from 'nanoid';
 import SearchFood from './components/SearchFood';
 import FetchFoodApi from './FetchFoodApi';
-import SaveDailyMealCard from './components/SavedMeals/SavedMealsList';
+import SaveDailyMealCard from './components/SaveDailyMealCard';
+
+
 
 function App() {
   const [searchText, setSearchText] = useState('');
@@ -87,7 +92,6 @@ function App() {
   }, []);
   //let today = new Date().toLocaleDateString()
   var d = (new Date()).toString().split(' ').splice(1, 3).join(' ');
-  
   return (
     <div className="container">
       <div style={{ display: 'flex', flexDirection: 'column' }}>

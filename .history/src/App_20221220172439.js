@@ -87,7 +87,6 @@ function App() {
   }, []);
   //let today = new Date().toLocaleDateString()
   var d = (new Date()).toString().split(' ').splice(1, 3).join(' ');
-  
   return (
     <div className="container">
       <div style={{ display: 'flex', flexDirection: 'column' }}>

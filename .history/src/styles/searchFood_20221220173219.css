@@ -3,8 +3,9 @@
     display: flex;
     align-items: center;
     background-color: #1f6e77;
+    
+
   }
-  
   .searchFood input {
     border: none;
     background-color: #1f6e77;
@@ -13,6 +14,7 @@
   .searchFood input::placeholder {
     outline: none;
     color: white;
+    padding-left: 0.5rem;
   }
   .searchFood input:focus {
     outline: none;

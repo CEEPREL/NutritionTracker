@@ -3,8 +3,9 @@
     display: flex;
     align-items: center;
     background-color: #1f6e77;
+    
+
   }
-  
   .searchFood input {
     border: none;
     background-color: #1f6e77;

@@ -10,6 +10,8 @@ import SearchFood from './components/SearchFood';
 import FetchFoodApi from './FetchFoodApi';
 import SaveDailyMealCard from './components/SavedMeals/SavedMealsList';
 
+
+
 function App() {
   const [searchText, setSearchText] = useState('');
   const [foods, setFoods] = useState(food_data_json);
@@ -87,7 +89,6 @@ function App() {
   }, []);
   //let today = new Date().toLocaleDateString()
   var d = (new Date()).toString().split(' ').splice(1, 3).join(' ');
-  
   return (
     <div className="container">
       <div style={{ display: 'flex', flexDirection: 'column' }}>
