@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from 'react';
-
+import Modal from 'react-modal';
 import './App.css';
 import './styles/searchFood.css';
 
@@ -44,12 +44,11 @@ function App() {
   };
 
   useEffect(() => {
-    
     setFoods(localStorage.getItem('foods') ? JSON.parse(localStorage.getItem('foods'))
       : (food_data_json)
     );
   }, []);
-  // Add an item from Food List using add meal btn to right column calculate nutrients tab
+  // Add an item from Food List using add meal btn to right column calculate nutirients tab
   const onAdd = (meal) => { //get a meal and add to mealItems
     const exists = mealItems.find((x) => x.id === meal.id);
 

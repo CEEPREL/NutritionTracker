@@ -44,7 +44,7 @@ function App() {
   };
 
   useEffect(() => {
-    
+    emptyCache
     setFoods(localStorage.getItem('foods') ? JSON.parse(localStorage.getItem('foods'))
       : (food_data_json)
     );

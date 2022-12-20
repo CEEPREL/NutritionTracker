@@ -11,6 +11,7 @@ import FoodList from './components/FoodList';
 import { nanoid } from 'nanoid';
 import SearchFood from './components/SearchFood';
 import FetchFoodApi from './FetchFoodApi';
+import emptyCache from './components/EmptyCache';
 
 
 
@@ -44,7 +45,7 @@ function App() {
   };
 
   useEffect(() => {
-    
+    emptyCache();
     setFoods(localStorage.getItem('foods') ? JSON.parse(localStorage.getItem('foods'))
       : (food_data_json)
     );

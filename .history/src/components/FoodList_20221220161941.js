@@ -1,5 +1,7 @@
+
 import AddFoodModal from './AddFoodModal';
 import Food from './Food';
+import SearchFood from './SearchFood';
 
 export default function FoodList({ food_data, mealItems, onAdd, onRemove, handleAddFoodItem, handleDeleteFoodItem }) {
 

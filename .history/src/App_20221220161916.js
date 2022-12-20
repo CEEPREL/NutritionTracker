@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from 'react';
-
+import Modal from 'react-modal';
 import './App.css';
 import './styles/searchFood.css';
 
@@ -44,18 +44,17 @@ function App() {
   };
 
   useEffect(() => {
-    
     setFoods(localStorage.getItem('foods') ? JSON.parse(localStorage.getItem('foods'))
       : (food_data_json)
     );
   }, []);
-  // Add an item from Food List using add meal btn to right column calculate nutrients tab
+  // Add an item from Food List using add meal btn to right column calculate nutirients tab
   const onAdd = (meal) => { //get a meal and add to mealItems
     const exists = mealItems.find((x) => x.id === meal.id);
 
     if (exists) { //increase it by 1 qty
       const newMealItems = mealItems.map((x) =>
-        x.id === meal.id ? { ...exists, qty: exists.qty + 1 } : x //if meal in calc is == to meal id else don't change qty
+        x.id === meal.id ? { ...exists, qty: exists.qty + 1 } : x //if meal in calc is == to meal id else dont change qty
       );
       setMealItems(newMealItems);
       localStorage.setItem('mealItems', JSON.stringify(newMealItems));
@@ -67,7 +66,7 @@ function App() {
     }
   };
 
-  // Remove an item from mealItems using minus meal btn inside right column calculate nutrients tab
+  // Remove an item from mealItems using minus meal btn inside right column calculate nutirients tab
   const onRemove = (meal) => {
     const exists = mealItems.find((x) => x.id === meal.id);
 

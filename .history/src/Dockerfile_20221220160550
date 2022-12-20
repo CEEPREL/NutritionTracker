@@ -1,0 +1,8 @@
+FROM node:19-alpine
+WORKDIR /nutrition-tracker-
+COPY package.json .
+RUN npm install
+# COPY . -> ALL IN CURRENT DIR and . place in /app
+COPY . .  
+EXPOSE 3000
+CMD ["npm", "start"]
