@@ -60,7 +60,7 @@ export default function CalculateNutrients({ mealItems, countMealItems, onAdd, o
                   <button onClick={() => onRemove(item)} className="food-remove">-</button>
                   <button onClick={() => onAdd(item)} className="food-add">+</button>
                 </div>
-                <div className="totals-col-3" style={{ textAlign: 'left'}}><small>x{item.qty}</small> {item.name}</div>
+                <div className="totals-col-3" style={{ textAlign: 'left', wrap:'noWrap'}}><small>x{item.qty}</small> {item.name}</div>
                 <div className="totals-col-1" style={{ textAlign: 'right' }}>{item.protein * item.qty}g</div>
                 <div className="totals-col-1" style={{ textAlign: 'right' }}>{item.calories * item.qty}g</div>
                 <div className="totals-col-1" style={{ textAlign: 'right' }}>{item.serving * item.qty}</div>

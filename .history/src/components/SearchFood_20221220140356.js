@@ -3,7 +3,7 @@ import { MdSearch } from 'react-icons/md'
 
 function SearchFood({ handleSearchFood }) {
     return (
-        <div className="searchFood" style={{ outline: '3px solid #1f6e77', borderRadius: '2px' }} >
+        <div className="searchFood" style={{ outline: '3px solid #1f6e77', borderRadius: '2px', boxShadow="1px 2px 9px #F4AAB9'", }} >
             <MdSearch className="search-icons" size="1.0rem" color="#1f6e77"/>
             <input style={{ width: '100%'}}
                 onChange={(event) => handleSearchFood(event.target.value)}
