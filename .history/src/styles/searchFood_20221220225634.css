@@ -1,0 +1,19 @@
+.searchFood {
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    background-color: #1f6e77;
+  }
+  
+  .searchFood input {
+    border: none;
+    background-color: white;
+    color: white;
+  }
+  .searchFood input::placeholder {
+    outline: none;
+    color: white;
+  }
+  .searchFood input:focus {
+    outline: none;
+  }
