@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-export default function SetTargets() {
+export default function SetTargets(targProtein) {
     const [targetProtein, setTargetProtein] = useState('');
 
     const handleSubmit = (e) => {
