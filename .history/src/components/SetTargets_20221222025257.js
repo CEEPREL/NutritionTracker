@@ -61,22 +61,12 @@ export default function SetTargets() {
 
                         <div style={{ display: "flex", flexDirection: "column" }}>
                             <p>Calories</p>
-                            <input style={{ width: "4rem" }} type="text"
-                                type="text"
-                                id="targetCalories"
-                                value={targetCalories}
-                                onChange={(e) => setTargetCalories(e.target.value)}
-                            />
+                            <input style={{ width: "4rem" }} type="text" />
                         </div>
 
                         <div style={{ display: "flex", flexDirection: "column" }}>
                             <p>Sugar</p>
-                            <input style={{ width: "4rem" }} type="text"
-                                type="text"
-                                id="targetSugar"
-                                value={targetSugar}
-                                onChange={(e) => setTargetSugar(e.target.value)}
-                            />
+                            <input style={{ width: "4rem" }} type="text" />
                         </div>
                         {targetCalories}
                         {targetProtein}

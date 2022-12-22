@@ -73,9 +73,9 @@ export default function SetTargets() {
                             <p>Sugar</p>
                             <input style={{ width: "4rem" }} type="text"
                                 type="text"
-                                id="targetSugar"
-                                value={targetSugar}
-                                onChange={(e) => setTargetSugar(e.target.value)}
+                                id="targetCalories"
+                                value={targetCalories}
+                                onChange={(e) => setTargetCalories(e.target.value)}
                             />
                         </div>
                         {targetCalories}

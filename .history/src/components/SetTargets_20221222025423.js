@@ -75,7 +75,7 @@ export default function SetTargets() {
                                 type="text"
                                 id="targetSugar"
                                 value={targetSugar}
-                                onChange={(e) => setTargetSugar(e.target.value)}
+                                onChange={(e) => setTargetCalories(e.target.value)}
                             />
                         </div>
                         {targetCalories}

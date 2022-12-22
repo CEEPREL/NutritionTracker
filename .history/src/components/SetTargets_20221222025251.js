@@ -35,9 +35,6 @@ export default function SetTargets() {
         setTargetCalories(localStorage.getItem('targetCalories') ? JSON.parse(localStorage.getItem('targetCalories'))
             : ("")
         );
-        setTargetSugar(localStorage.getItem('targetSugar') ? JSON.parse(localStorage.getItem('targetSugar'))
-            : ("")
-        );
     }, []);
 
     return (
@@ -61,31 +58,21 @@ export default function SetTargets() {
 
                         <div style={{ display: "flex", flexDirection: "column" }}>
                             <p>Calories</p>
-                            <input style={{ width: "4rem" }} type="text"
-                                type="text"
-                                id="targetCalories"
-                                value={targetCalories}
-                                onChange={(e) => setTargetCalories(e.target.value)}
-                            />
+                            <input style={{ width: "4rem" }} type="text" />
                         </div>
 
                         <div style={{ display: "flex", flexDirection: "column" }}>
                             <p>Sugar</p>
-                            <input style={{ width: "4rem" }} type="text"
-                                type="text"
-                                id="targetSugar"
-                                value={targetSugar}
-                                onChange={(e) => setTargetSugar(e.target.value)}
-                            />
+                            <input style={{ width: "4rem" }} type="text" />
                         </div>
                         {targetCalories}
-                        {targetProtein}
+                    {targetProtein}
                     </div>
                     <button type="submit" onClick={handleSubmit}
                         style={{ backgroundColor: "#1f6e77", color: 'white', fontSize: "1rem", padding: "0.3rem", fontWeight: "bold", marginTop: "0.5rem", cursor: "pointer" }}>
                         Set targets
                     </button>
-
+                    
                 </div>
 
                 <div id="col2" style={{ flexBasis: '50%', display: 'inlineBlock' }}>

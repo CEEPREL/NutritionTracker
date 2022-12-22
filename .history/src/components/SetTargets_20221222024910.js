@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 
 export default function SetTargets() {
     const [targetProtein, setTargetProtein] = useState('');
-    const [targetCalories, setTargetCalories] = useState('');
-    const [targetSugar, setTargetSugar] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -12,16 +10,11 @@ export default function SetTargets() {
         localStorage.setItem('targetProtein', JSON.stringify(targetProtein));
         localStorage.setItem('targetCalories', JSON.stringify(targetCalories));
         localStorage.setItem('targetSugar', JSON.stringify(targetSugar));
-
+        
         setTargetProtein(localStorage.getItem('targetProtein') ? JSON.parse(localStorage.getItem('targetProtein'))
             : ("")
         );
-        setTargetCalories(localStorage.getItem('targetCalories') ? JSON.parse(localStorage.getItem('targetCalories'))
-            : ("")
-        );
-        setTargetSugar(localStorage.getItem('targetSugar') ? JSON.parse(localStorage.getItem('targetSugar'))
-            : ("")
-        );
+
         // setName("")
         // setServing("")
         // setProtein("")
@@ -30,12 +23,6 @@ export default function SetTargets() {
     }
     useEffect(() => {
         setTargetProtein(localStorage.getItem('targetProtein') ? JSON.parse(localStorage.getItem('targetProtein'))
-            : ("")
-        );
-        setTargetCalories(localStorage.getItem('targetCalories') ? JSON.parse(localStorage.getItem('targetCalories'))
-            : ("")
-        );
-        setTargetSugar(localStorage.getItem('targetSugar') ? JSON.parse(localStorage.getItem('targetSugar'))
             : ("")
         );
     }, []);
@@ -61,36 +48,24 @@ export default function SetTargets() {
 
                         <div style={{ display: "flex", flexDirection: "column" }}>
                             <p>Calories</p>
-                            <input style={{ width: "4rem" }} type="text"
-                                type="text"
-                                id="targetCalories"
-                                value={targetCalories}
-                                onChange={(e) => setTargetCalories(e.target.value)}
-                            />
+                            <input style={{ width: "4rem" }} type="text" />
                         </div>
 
                         <div style={{ display: "flex", flexDirection: "column" }}>
                             <p>Sugar</p>
-                            <input style={{ width: "4rem" }} type="text"
-                                type="text"
-                                id="targetSugar"
-                                value={targetSugar}
-                                onChange={(e) => setTargetSugar(e.target.value)}
-                            />
+                            <input style={{ width: "4rem" }} type="text" />
                         </div>
-                        {targetCalories}
-                        {targetProtein}
+
                     </div>
                     <button type="submit" onClick={handleSubmit}
                         style={{ backgroundColor: "#1f6e77", color: 'white', fontSize: "1rem", padding: "0.3rem", fontWeight: "bold", marginTop: "0.5rem", cursor: "pointer" }}>
                         Set targets
                     </button>
-
                 </div>
 
                 <div id="col2" style={{ flexBasis: '50%', display: 'inlineBlock' }}>
                     <br></br>
-                    Notes for calculating targets
+                        Notes for calculating targets
                     <div style={{ display: 'flex', flexDirection: 'column', gap: "15px", marginTop: '10px', justifyContent: "left" }}>
                         <details>1.2g protein per body weight kg</details>
                         <details>To build muscle and gain weight, intake 2500 Calories</details>
@@ -100,6 +75,6 @@ export default function SetTargets() {
             </div>
             <br></br>
         </details>
-
+        
     )
 }
