@@ -46,7 +46,7 @@ export default function CalculateNutrients(
             <div className="total-food-nutrients">
               <div className="total-food-nutrients totals-col-2" style={{ background: '#1d2127', }}><p style={{ background: '#1d2127' }}><b>Target</b></p></div>
               <p>Protein <b>{targProtein}g</b></p>
-              <p>Calories <b>{targCalories}c</b></p>
+              <p>Calories <b>0c</b></p>
               <p>Sugar <b>{targSugar}g</b></p>
             </div>
           </div> :
