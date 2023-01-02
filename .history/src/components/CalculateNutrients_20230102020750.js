@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 export default function CalculateNutrients(
   {
     mealItems, countMealItems,
-    onAdd, onRemove,
+    onAdd, onRemove, 
     targProtein, targCalories, targSugar
 
   }) {
@@ -20,10 +20,10 @@ export default function CalculateNutrients(
   // const targetCalories = 2720;
   // const targetSugar = 40;
 
-  const remainingProtein = Math.round(targProtein - totalProtein);
+  const remainingProtein = Math.round(targetProtein - totalProtein);
   const remainingServing = targetServing - totalServing;
-  const remainingCalories = Math.round(targCalories - totalCalories);
-  const remainingSugar = Math.round(targSugar - totalSugar);
+  const remainingCalories = Math.round(targetCalories - totalCalories);
+  const remainingSugar = Math.round(targetSugar - totalSugar);
   return (
     <div className="mealItems">
       <div style={{ display: 'flex', flexDirection: 'row' }}>
@@ -77,15 +77,16 @@ export default function CalculateNutrients(
               </div>
             )}
 
+            <hr style={{ marginBottom: '6px' }} />
+
             {/* Total row with boxes for cal, prot, sugar */}
-            <div className="total-food-nutrients" style={{ marginBottom: '2px', background: 'green' ? { totalCalories } > 1000 : '#1d2127' }}>
+            <div className="total-food-nutrients" style={{ marginBottom: '22px', background: 'green' ? { totalCalories } > 1000 : '#1d2127' }}>
+
               <div className="total-food-nutrients totals-col-2" style={{ background: '#1d2127' }}><p style={{ background: '#1d2127' }}><b>Total</b></p></div>
               <p>Protein <b>{totalProtein}g</b></p>
               <p style={{ background: 'green' ? { totalCalories } > 1000 : '#1d2127' }}>Calories <b>{totalCalories}</b></p>
               <p>Sugar <b>{totalSugar}g</b></p>
             </div>
-
-            <hr style={{ marginBottom: '6px' }} />
 
             {/* Target row with boxes for cal, prot, sugar */}
             <div className="total-food-nutrients">

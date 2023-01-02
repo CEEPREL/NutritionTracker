@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 export default function CalculateNutrients(
   {
     mealItems, countMealItems,
-    onAdd, onRemove,
+    onAdd, onRemove, 
     targProtein, targCalories, targSugar
 
   }) {
@@ -71,21 +71,22 @@ export default function CalculateNutrients(
                   <button onClick={() => onAdd(item)} className="food-add">+</button>
                 </div>
                 <div className="totals-col-3" style={{ textAlign: 'left' }}><small>x{item.qty}</small> {item.name}</div>
-                <div className="totals-col-1" style={{ textAlign: 'right' }}>{item.protein * item.qty}g</div>
+                <div className="totals-col-1" style={{ textAlign: 'right' }}>{item.protein * item.qty}ga</div>
                 <div className="totals-col-1" style={{ textAlign: 'right' }}>{item.calories * item.qty}g</div>
                 <div className="totals-col-1" style={{ textAlign: 'right' }}>{item.serving * item.qty}</div>
               </div>
             )}
 
+            <hr style={{ marginBottom: '6px' }} />
+
             {/* Total row with boxes for cal, prot, sugar */}
-            <div className="total-food-nutrients" style={{ marginBottom: '2px', background: 'green' ? { totalCalories } > 1000 : '#1d2127' }}>
+            <div className="total-food-nutrients" style={{ marginBottom: '22px', background: 'green' ? { totalCalories } > 1000 : '#1d2127' }}>
+
               <div className="total-food-nutrients totals-col-2" style={{ background: '#1d2127' }}><p style={{ background: '#1d2127' }}><b>Total</b></p></div>
               <p>Protein <b>{totalProtein}g</b></p>
               <p style={{ background: 'green' ? { totalCalories } > 1000 : '#1d2127' }}>Calories <b>{totalCalories}</b></p>
               <p>Sugar <b>{totalSugar}g</b></p>
             </div>
-
-            <hr style={{ marginBottom: '6px' }} />
 
             {/* Target row with boxes for cal, prot, sugar */}
             <div className="total-food-nutrients">

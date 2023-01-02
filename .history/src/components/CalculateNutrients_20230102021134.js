@@ -87,6 +87,8 @@ export default function CalculateNutrients(
 
             <hr style={{ marginBottom: '6px' }} />
 
+
+
             {/* Target row with boxes for cal, prot, sugar */}
             <div className="total-food-nutrients">
               <div className="total-food-nutrients totals-col-2" style={{ background: '#1d2127' }}><p style={{ background: '#1d2127' }}><b>Target</b></p></div>

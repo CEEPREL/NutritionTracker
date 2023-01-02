@@ -78,7 +78,7 @@ export default function CalculateNutrients(
             )}
 
             {/* Total row with boxes for cal, prot, sugar */}
-            <div className="total-food-nutrients" style={{ marginBottom: '2px', background: 'green' ? { totalCalories } > 1000 : '#1d2127' }}>
+            <div className="total-food-nutrients" style={{ marginBottom: '22px', background: 'green' ? { totalCalories } > 1000 : '#1d2127' }}>
               <div className="total-food-nutrients totals-col-2" style={{ background: '#1d2127' }}><p style={{ background: '#1d2127' }}><b>Total</b></p></div>
               <p>Protein <b>{totalProtein}g</b></p>
               <p style={{ background: 'green' ? { totalCalories } > 1000 : '#1d2127' }}>Calories <b>{totalCalories}</b></p>
@@ -86,6 +86,8 @@ export default function CalculateNutrients(
             </div>
 
             <hr style={{ marginBottom: '6px' }} />
+
+
 
             {/* Target row with boxes for cal, prot, sugar */}
             <div className="total-food-nutrients">
