@@ -88,7 +88,7 @@ export default function SetTargets({ handleAddTargets }) {
 
                 </div>
 
-                <div id="col2" style={{ flexBasis: '70%', display: 'inlineBlock', marginLeft: '4rem', marginRight: '0rem' }}>
+                <div id="col2" style={{ flexBasis: '70%', display: 'inlineBlock', marginLeft: '1rem', marginRight: '0rem' }}>
                     <br></br>
                     <h2>Personal notes for calculating targets / gain muscle + weight</h2>
                     <div style={{ display: 'flex', flexDirection: 'row', gap: "15px", marginTop: '10px', justifyContent: "left", flexWrap: 'wrap' }}>
