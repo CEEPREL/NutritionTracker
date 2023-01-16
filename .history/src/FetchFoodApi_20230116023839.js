@@ -44,7 +44,7 @@ export default function FetchFoodApi() {
                     }}
                     required>
                 </input>
-                <button onClick={fetchData} style={{ borderRadius : '6px', padding : '2px' }}>Fetch food</button>
+                <button onClick={fetchData} style={{ roundedCorners: '10px'}}>Fetch food</button>
             </div>
             
             {fetchError && <p style={{ color: "red" }}>{`Error: ${fetchError}`}</p>}

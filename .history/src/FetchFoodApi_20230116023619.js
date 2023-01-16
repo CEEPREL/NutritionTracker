@@ -44,10 +44,10 @@ export default function FetchFoodApi() {
                     }}
                     required>
                 </input>
-                <button onClick={fetchData} style={{ borderRadius : '6px', padding : '2px' }}>Fetch food</button>
+                <button onClick={fetchData}>Fetch food</button>
             </div>
             
-            {fetchError && <p style={{ color: "red" }}>{`Error: ${fetchError}`}</p>}
+            {fetchError && <p style={{ color: "red" }} style={{ outline: '3px solid #1f6e77', borderRadius: '6px' }} > {`Error: ${fetchError}`}</p>}
 
             {fetchedFood ?
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>

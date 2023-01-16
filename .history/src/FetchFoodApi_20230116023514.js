@@ -36,7 +36,7 @@ export default function FetchFoodApi() {
         <div>
             <h2>Search for specific food nutrients</h2>
             <br></br>
-            <div className="searchFood" style={{ outline: '3px solid #1f6e77', borderRadius: '6px' }} >
+            <div className="" style={{ display: 'flex', }}>
                 <input style={{ width: "100%"}}
                     placeholder="Type food to load..."
                     onChange={(event) => {
@@ -44,7 +44,7 @@ export default function FetchFoodApi() {
                     }}
                     required>
                 </input>
-                <button onClick={fetchData} style={{ borderRadius : '6px', padding : '2px' }}>Fetch food</button>
+                <button onClick={fetchData}>Fetch food</button>
             </div>
             
             {fetchError && <p style={{ color: "red" }}>{`Error: ${fetchError}`}</p>}
