@@ -116,7 +116,7 @@ font-family: 'Urbanist', sans-serif;
 
 .food-card {
   min-height:10rem;
-  min-width:10rem;
+  min-width:11rem;
 
   border-radius: 6px;
   background-color: #1f6e77;
