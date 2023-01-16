@@ -42,7 +42,7 @@ Link to app: https://meals-nutrition-tracker.netlify.app/
 - The target learning outcomes are:
     - Eat enough and healthier food
     - Get a better understanding of food nutrients in different meals
-    - React js
+    - Practice React js
     - CSS Layouts revision
  
  <!-- app-screenshots -->
