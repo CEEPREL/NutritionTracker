@@ -47,8 +47,8 @@ export default function SetTargets({ handleAddTargets }) {
                 <div id="col1" style={{ flexBasis: '30%', display: 'inlineBlock' }}>
 
                     <br></br>
-                    <h3>Set personal nutrient targets</h3>
-                    <div style={{ display: 'flex', gap: "10px", marginTop: '10px', justifyContent: "left", }}>
+                    <h2>Set personal nutrient targets</h2>
+                    <div style={{ display: 'flex', gap: "100px", marginTop: '10px', justifyContent: "left", }}>
 
                         <div style={{ display: "flex", flexDirection: "column" }}>
                             <p>Protein</p>
@@ -90,7 +90,7 @@ export default function SetTargets({ handleAddTargets }) {
 
                 <div id="col2" style={{ flexBasis: '70%', marginRight: '0rem' }}>
                     <br></br>
-                    <h3>Personal notes for calculating targets / gain muscle + weight</h3>
+                    <h2>Personal notes for calculating targets / gain muscle + weight</h2>
                     <div style={{ display: 'flex', flexDirection: 'row', gap: "15px", marginTop: '10px', justifyContent: "left", flexWrap: 'wrap' }}>
                         <details>
                             <summary style={{ color: '#2e828c', fontSize: "1.25rem" }}><b>Protein</b></summary>
