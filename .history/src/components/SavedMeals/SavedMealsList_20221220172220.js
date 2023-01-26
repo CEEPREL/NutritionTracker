@@ -1,5 +1,5 @@
 import React from 'react'
-import SavedMealCard from './SavedMealItem'
+import SavedMealCard from './SavedMealCard'
 
 export default function SavedMealsList() {
   return (

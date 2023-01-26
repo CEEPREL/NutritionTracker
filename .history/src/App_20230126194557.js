@@ -4,7 +4,7 @@ import './App.css';
 import './styles/searchFood.css';
 import food_data_json from './data';
 import CalculateNutrients from './components/food/CalculateNutrients';
-import FoodContext, { FoodProvider } from './context/FoodContext';
+import FoodContext from './context/FoodContext';
 
 import { nanoid } from 'nanoid';
 import SearchFood from './components/food/SearchFood';
