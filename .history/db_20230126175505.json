@@ -1,6 +1,5 @@
-import { nanoid } from "nanoid";
-
-    const food_data_json = [
+{
+    food_data_json = [
         {
             id: nanoid(),
             name: "Chicken Breast",
@@ -44,6 +43,4 @@ import { nanoid } from "nanoid";
 
         }
     ]
-
-
-export default food_data_json;
+  }

@@ -1,15 +1,36 @@
-import { nanoid } from "nanoid";
-
-    const food_data_json = [
+{
+    "food_data_json": [
         {
-            id: nanoid(),
-            name: "Chicken Breast",
-            serving: 100,
-            calories: 240,
-            protein: 27,
-            category: "lunch",
-            sugar: 0,
-        }, {
+            "id": 1,
+            "name": "Chicken Breast",
+            "serving": 100,
+            "calories": 240,
+            "protein": 27,
+            "category": "lunch",
+            "sugar": 0
+        },
+        {
+            "id": 2,
+            "name": "Egg",
+            "serving": 50,
+            "calories": 75,
+            "protein": 6.5,
+            "category": "breakfast",
+            "sugar": 0
+        },
+        {
+            "id": 3,
+            "name": "Protein Yogurt",
+            "serving": 200,
+            "calories": 75,
+            "protein": 6.5,
+            "category": "breakfast",
+            "sugar": 0
+        },
+      
+    ]
+  }
+     {
             id: nanoid(),
             name: "Egg",
             calories: 75,

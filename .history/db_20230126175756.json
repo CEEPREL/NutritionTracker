@@ -1,5 +1,17 @@
-import { nanoid } from "nanoid";
-
+{
+    "food_data_json": [
+        {
+            "id": 1,
+            "name": "Chicken Breast",
+            "serving": 100,
+            "calories": 240,
+            "protein": 27,
+            "category": "lunch",
+            "sugar": 0
+        },
+      
+    ]
+  }
     const food_data_json = [
         {
             id: nanoid(),

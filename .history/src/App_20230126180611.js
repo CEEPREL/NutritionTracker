@@ -173,6 +173,7 @@ function App() {
           <small>&nbsp;&nbsp;Illustration by Icons 8 from <a href="https://icons8.com/">Ouch!</a></small>
         </footer>
       </div>
+    </FoodProvider>
   );
 }
 export default App;

@@ -63,6 +63,7 @@ export default function SetTargets({ handleAddTargets }) {
                         <div style={{ display: "flex", flexDirection: "column" }}>
                             <p>Calories</p>
                             <input style={{ width: "4rem" }} type="text"
+                                type="text"
                                 id="targetCalories"
                                 value={targetCalories}
                                 onChange={(e) => setTargetCalories(e.target.value)}

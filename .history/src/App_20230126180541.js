@@ -113,6 +113,7 @@ function App() {
   var day = (new Date()).toString().split(' ').splice(1, 3).join(' ');
 
   return (
+    <FoodProvider>
       <div className="container">
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <div className="wrapper-card">
@@ -173,6 +174,7 @@ function App() {
           <small>&nbsp;&nbsp;Illustration by Icons 8 from <a href="https://icons8.com/">Ouch!</a></small>
         </footer>
       </div>
+    </FoodProvider>
   );
 }
 export default App;

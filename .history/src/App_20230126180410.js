@@ -113,66 +113,67 @@ function App() {
   var day = (new Date()).toString().split(' ').splice(1, 3).join(' ');
 
   return (
-      <div className="container">
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <div className="wrapper-card">
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <h2>Track today's meals</h2>
-              <h3>{day}</h3>
+    <FoodProvider>
+    <div className="container">
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div className="wrapper-card">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <h2>Track today's meals</h2>
+            <h3>{day}</h3>
+          </div>
+          {/* <img src={'src/Images/bubble-gum-baguette-and-salad-in-a-paper-bag-tomatoes-on-a-plate-and-olive-oil.png'} alt='bubble'></img> */}
+
+          <SetTargets handleAddTargets={handleAddTargets}
+
+          />
+        </div>
+
+        <div className="row">
+          <div className="col-left">
+            <div className="wrapper-card-food-list">
+              <SearchFood
+                handleSearchFood={setSearchText}
+              />
+              <FoodList
+                food_data={foods.filter((food) => food.name.toLowerCase().includes(searchText))}
+                onAdd={onAdd} onRemove={onRemove}
+                mealItems={mealItems}
+                handleAddFoodItem={handleAddFoodItem} handleDeleteFoodItem={handleDeleteFoodItem}
+              />
             </div>
-            {/* <img src={'src/Images/bubble-gum-baguette-and-salad-in-a-paper-bag-tomatoes-on-a-plate-and-olive-oil.png'} alt='bubble'></img> */}
 
-            <SetTargets handleAddTargets={handleAddTargets}
+          </div> {/* left col */}
 
-            />
+          <div className="col-right">
+            <div className="wrapper-card-calculate-rightCol" >
+              <CalculateNutrients onAdd={onAdd} onRemove={onRemove}
+                mealItems={mealItems} countMealItems={mealItems.length}
+                targProtein={targetProtein} targCalories={targetCalories} targSugar={targetSugar}
+              />
+
+            </div>
+
+          </div> {/* bottom long col */}
+          <div className="col-bot">
+            <div className="wrapper-card">
+              <FetchFoodApi />
+            </div>
           </div>
 
-          <div className="row">
-            <div className="col-left">
-              <div className="wrapper-card-food-list">
-                <SearchFood
-                  handleSearchFood={setSearchText}
-                />
-                <FoodList
-                  food_data={foods.filter((food) => food.name.toLowerCase().includes(searchText))}
-                  onAdd={onAdd} onRemove={onRemove}
-                  mealItems={mealItems}
-                  handleAddFoodItem={handleAddFoodItem} handleDeleteFoodItem={handleDeleteFoodItem}
-                />
-              </div>
-
-            </div> {/* left col */}
-
-            <div className="col-right">
-              <div className="wrapper-card-calculate-rightCol" >
-                <CalculateNutrients onAdd={onAdd} onRemove={onRemove}
-                  mealItems={mealItems} countMealItems={mealItems.length}
-                  targProtein={targetProtein} targCalories={targetCalories} targSugar={targetSugar}
-                />
-
-              </div>
-
-            </div> {/* bottom long col */}
-            <div className="col-bot">
-              <div className="wrapper-card">
-                <FetchFoodApi />
-              </div>
+          <div className="col-bot">
+            <div className="wrapper-card">
+              <SaveDailyMealCard />
             </div>
+          </div>
+        </div> {/* container end */}
 
-            <div className="col-bot">
-              <div className="wrapper-card">
-                <SaveDailyMealCard />
-              </div>
-            </div>
-          </div> {/* container end */}
-
-        </div> {/* row end */}
-        <footer style={{ color: 'gray', borderRadius: '0px', marginBottom: '1rem' }}>
-          <br></br><br></br>
-          <small>Developed by <a href="https://github.com/Vasil1001">Vasil.</a></small>
-          <small>&nbsp;&nbsp;Illustration by Icons 8 from <a href="https://icons8.com/">Ouch!</a></small>
-        </footer>
-      </div>
+      </div> {/* row end */}
+      <footer style={{ color: 'gray', borderRadius: '0px', marginBottom: '1rem' }}>
+        <br></br><br></br>
+        <small>Developed by <a href="https://github.com/Vasil1001">Vasil.</a></small>
+        <small>&nbsp;&nbsp;Illustration by Icons 8 from <a href="https://icons8.com/">Ouch!</a></small>
+      </footer>
+    </div>
   );
 }
 export default App;

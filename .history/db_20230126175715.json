@@ -1,5 +1,27 @@
-import { nanoid } from "nanoid";
-
+{
+    "feedback": [
+      {
+        "id": 1,
+        "rating": 5,
+        "text": "1 This is coming from the json server backend"
+      },
+      {
+        "id": 2,
+        "rating": 2,
+        "text": "2 This is coming from the json server backend"
+      },
+      {
+        "id": 3,
+        "rating": 3,
+        "text": "3 This is coming from the json server backend"
+      },
+      {
+        "text": "Testing post method to JSON SERVER",
+        "rating": 5,
+        "id": 5
+      }
+    ]
+  }
     const food_data_json = [
         {
             id: nanoid(),
