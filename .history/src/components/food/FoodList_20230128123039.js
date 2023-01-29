@@ -4,10 +4,8 @@ import Spinner from '../shared/Spinner';
 import AddFoodModal from './AddFoodModal';
 import Food from './Food';
 import { AnimatePresence, motion } from 'framer-motion'
-import SearchFood from './SearchFood';
-import { useState } from 'react';
 
-export default function FoodList({ food_data, mealItems, onAdd, onRemove }) {
+export default function FoodList({ mealItems, onAdd, onRemove }) {
     const { foods, isLoading, handleAddFoodItem, handleDeleteFoodItem } = useContext(FoodContext)
 
     if (!isLoading && (!foods || foods.length === 0)) {
@@ -16,20 +14,20 @@ export default function FoodList({ food_data, mealItems, onAdd, onRemove }) {
 
     return isLoading ? <><br></br><Spinner /> </> : (
         <>
-            <br></br>
-            <div>
-                <button>Breakfast</button>
-                <button>Lunch</button>
-                <button>Dinner</button>
-            </div>
-            <br></br>
-            <AnimatePresence>
+                <br></br>
+                <div>
+                    <button>Breakfast</button>
+                    <button>Lunch</button>
+                    <button>Dinner</button>
+                </div>
+                <br></br>
+                <AnimatePresence>
                 <div className="foodList">
                     <div className="new-card">
                         <AddFoodModal handleAddFoodItem={handleAddFoodItem} />
                     </div>
 
-                    {!isLoading && foods.length > 0 ? food_data.map((food, index) => (
+                    {!isLoading && foods.length > 0 ? foods.map((food, index) => (
                         <motion.div
                             key={food.id}
                             initial={{ opacity: 0 }}
@@ -46,6 +44,7 @@ export default function FoodList({ food_data, mealItems, onAdd, onRemove }) {
                             />
                         </motion.div>
                     )) : <p><br></br>No foods added yet</p>}
+                        
                 </div>
             </AnimatePresence>
         </>

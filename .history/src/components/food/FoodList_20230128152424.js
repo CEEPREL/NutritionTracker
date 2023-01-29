@@ -29,7 +29,7 @@ export default function FoodList({ food_data, mealItems, onAdd, onRemove }) {
                         <AddFoodModal handleAddFoodItem={handleAddFoodItem} />
                     </div>
 
-                    {!isLoading && foods.length > 0 ? food_data.map((food, index) => (
+                    {!isLoading && foods.length > 0 ? foods.map((food, index) => (
                         <motion.div
                             key={food.id}
                             initial={{ opacity: 0 }}

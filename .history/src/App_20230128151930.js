@@ -97,6 +97,7 @@ function App() {
             <h2>Track today's meals</h2>
             <h3>{day}</h3>
           </div>
+          {/* <img src={'src/Images/bubble-gum-baguette-and-salad-in-a-paper-bag-tomatoes-on-a-plate-and-olive-oil.png'} alt='bubble'></img> */}
           <SetTargets handleAddTargets={handleAddTargets}
           />
         </div>

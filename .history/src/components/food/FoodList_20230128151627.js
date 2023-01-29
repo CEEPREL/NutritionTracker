@@ -5,10 +5,10 @@ import AddFoodModal from './AddFoodModal';
 import Food from './Food';
 import { AnimatePresence, motion } from 'framer-motion'
 import SearchFood from './SearchFood';
-import { useState } from 'react';
 
-export default function FoodList({ food_data, mealItems, onAdd, onRemove }) {
+export default function FoodList({ mealItems, onAdd, onRemove }) {
     const { foods, isLoading, handleAddFoodItem, handleDeleteFoodItem } = useContext(FoodContext)
+    const [searchText, setSearchText] = useState('');
 
     if (!isLoading && (!foods || foods.length === 0)) {
         return <p><br></br>No foods added yet.</p>
@@ -16,6 +16,7 @@ export default function FoodList({ food_data, mealItems, onAdd, onRemove }) {
 
     return isLoading ? <><br></br><Spinner /> </> : (
         <>
+            <SearchFood handleSearchFood={setSearchText} />
             <br></br>
             <div>
                 <button>Breakfast</button>
@@ -29,7 +30,7 @@ export default function FoodList({ food_data, mealItems, onAdd, onRemove }) {
                         <AddFoodModal handleAddFoodItem={handleAddFoodItem} />
                     </div>
 
-                    {!isLoading && foods.length > 0 ? food_data.map((food, index) => (
+                    {!isLoading && foods.length > 0 ? foods.map((food, index) => (
                         <motion.div
                             key={food.id}
                             initial={{ opacity: 0 }}

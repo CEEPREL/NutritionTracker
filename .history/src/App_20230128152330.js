@@ -108,7 +108,7 @@ function App() {
                 handleSearchFood={setSearchText}
               />
               <FoodList
-                food_data={foods.filter((food) => food.name.toLowerCase().includes(searchText))}
+                food_data={foods_data.filter((food) => food.name.toLowerCase().includes(searchText))}
                 onAdd={onAdd} onRemove={onRemove}
                 mealItems={mealItems}
               />
