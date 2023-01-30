@@ -13,8 +13,6 @@ import SaveDailyMealCard from './components/savedMeals/SavedMealsList';
 import SetTargets from './components/SetTargets';
 import FoodList from './components/food/FoodList';
 import { useContext } from 'react';
-import SavedMealCard from './components/savedMeals/SavedMealItem';
-import SavedMealsList from './components/savedMeals/SavedMealsList';
 
 
 function App() {
@@ -136,10 +134,7 @@ function App() {
 
           <div className="col-bot">
             <div className="wrapper-card">
-              <SavedMealsList
-                countMealItems={mealItems.length}
-                mealItems={mealItems}
-              />
+              <SaveMealCard />
             </div>
           </div>
         </div> {/* container end */}

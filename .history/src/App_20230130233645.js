@@ -136,10 +136,8 @@ function App() {
 
           <div className="col-bot">
             <div className="wrapper-card">
-              <SavedMealsList
-                countMealItems={mealItems.length}
-                mealItems={mealItems}
-              />
+              <SavedMealsList 
+              countMealItems={mealItems.length}/>
             </div>
           </div>
         </div> {/* container end */}

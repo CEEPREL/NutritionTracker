@@ -8,6 +8,10 @@ export default function SavedMealCard({ countMealItems, mealItems, totalProtein,
         <p>Foods eaten: {countMealItems} </p>
         <div>
           <div className="totals-row"> {/* Title names for table like look */}
+            <div className="totals-btns">
+              <button className="food-remove"></button>
+              <button className="food-add"></button>
+            </div>
             <div className="totals-col-3"><small></small>Name </div>
             <div className="totals-col-1" style={{ textAlign: 'right' }}><small>Prot</small></div>
             <div className="totals-col-1" style={{ textAlign: 'right' }}><small>Cal</small></div>
