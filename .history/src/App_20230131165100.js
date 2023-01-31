@@ -4,6 +4,8 @@ import './App.css';
 import './styles/searchFood.css';
 import CalculateNutrients from './components/food/CalculateNutrients';
 import FoodContext, { FoodProvider } from './context/FoodContext';
+
+import { nanoid } from 'nanoid';
 import SearchFood from './components/food/SearchFood';
 import FetchFoodApi from './components/food/FetchFoodApi';
 import SetTargets from './components/SetTargets';

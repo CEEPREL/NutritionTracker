@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function SavedMealCard({ countMealItems, mealItems, totalProtein, totalCal, totalSugar }) {
   return (
-    <div >
-      <div style={{ display: 'flex', flexDirection: 'column', border: '1px solid black', padding: '0.75rem'}}>
+    <div>
+      <div style={{ display: 'flex', flexDirection: 'column', border: '1px solid black' }}>
         <h2>31/01/23 Card</h2>
         <p>Foods eaten: {countMealItems} </p>
         <div>

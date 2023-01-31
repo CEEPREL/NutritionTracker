@@ -349,7 +349,7 @@ font-family: 'Urbanist', sans-serif;
   display: flex;
   justify-content: space-between;
 }
-.hoverText {
+.hoverText .p{
   white-space:no-wrap;
   overflow:hidden;
   text-overflow:ellipsis;

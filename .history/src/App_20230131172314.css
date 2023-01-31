@@ -349,17 +349,13 @@ font-family: 'Urbanist', sans-serif;
   display: flex;
   justify-content: space-between;
 }
-.hoverText {
-  white-space:no-wrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  flex-basis: 35%;
-  padding:0.1rem;
-}
+
 .hoverText:hover {
+  flex-basis: 35%;
+  padding:0.3rem;
   overflow: visible; 
   white-space: normal;
-  height:auto;  /* just added this line */
+  width:auto;  /* just added this line */
 }
 @media screen and (max-width: 1100px) {
   .col-left, .col-right {   

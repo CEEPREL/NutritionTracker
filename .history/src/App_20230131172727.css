@@ -350,11 +350,12 @@ font-family: 'Urbanist', sans-serif;
   justify-content: space-between;
 }
 .hoverText {
-  white-space:no-wrap;
+  text-align: left;
+  white-space:noWrap ;
   overflow:hidden;
   text-overflow:ellipsis;
   flex-basis: 35%;
-  padding:0.1rem;
+  padding:0.3rem;
 }
 .hoverText:hover {
   overflow: visible; 

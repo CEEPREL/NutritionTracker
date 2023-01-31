@@ -2,8 +2,11 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import './styles/searchFood.css';
+import food_data_json from './data';
 import CalculateNutrients from './components/food/CalculateNutrients';
 import FoodContext, { FoodProvider } from './context/FoodContext';
+
+import { nanoid } from 'nanoid';
 import SearchFood from './components/food/SearchFood';
 import FetchFoodApi from './components/food/FetchFoodApi';
 import SetTargets from './components/SetTargets';

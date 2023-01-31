@@ -70,7 +70,7 @@ export default function CalculateNutrients(
                   <button onClick={() => onRemove(item)} className="food-remove">-</button>
                   <button onClick={() => onAdd(item)} className="food-add">+</button>
                 </div>
-                <div className="hoverText" style={{ }}><p><small>x{item.qty}</small> {item.name}</p></div>
+                <div className="hoverText" ><small>x{item.qty}</small> {item.name}</div>
                 <div className="totals-col-1" style={{ textAlign: 'right' }}>{Math.round(item.protein * item.qty)}g</div>
                 <div className="totals-col-1" style={{ textAlign: 'right' }}>{Math.round(item.calories * item.qty)}g</div>
                 <div className="totals-col-1" style={{ textAlign: 'right' }}>{Math.round(item.serving * item.qty)}</div>

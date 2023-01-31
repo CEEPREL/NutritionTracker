@@ -4,12 +4,11 @@ import SavedMealCard from './SavedMealItem'
 export default function SavedMealsList({ countMealItems, mealItems }) {
   return (
     <div>
-    <div className="foodList" >
+    <div className="foodList">
       <SavedMealCard
         countMealItems={countMealItems}
         mealItems={mealItems}
-      />
-      </div>
+      /></div>
     </div>
   )
 }
