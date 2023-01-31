@@ -7,7 +7,7 @@ export default function SavedMealCard({ countMealItems, mealItems, totalProtein,
       
       
         <h2>Saved Diary Card</h2>
-        <p>Foods eaten: {countMealItems} </p>
+        <p><br></br>Foods eaten: {countMealItems} </p>
         <div>
           <div className="totals-row"> {/* Title names for table like look */}
             <div className="totals-col-3"><small></small>Name </div>
