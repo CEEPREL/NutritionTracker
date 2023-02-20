@@ -4,8 +4,6 @@ import Spinner from '../shared/Spinner';
 import AddFoodModal from './AddFoodModal';
 import Food from './Food';
 import { AnimatePresence, motion } from 'framer-motion'
-import SearchFood from './SearchFood';
-import { useState } from 'react';
 
 export default function FoodList({ food_data, mealItems, onAdd, onRemove }) {
     const { foods, isLoading, handleAddFoodItem, handleDeleteFoodItem } = useContext(FoodContext)

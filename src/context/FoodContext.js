@@ -54,8 +54,8 @@ export const FoodProvider = ({ children }) => {
         value={{
             foods,
             isLoading,
-            setFoods,
             searchText,
+            setFoods,
             setSearchText,
             handleAddFoodItem,
             handleDeleteFoodItem,

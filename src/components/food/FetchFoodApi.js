@@ -1,18 +1,12 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import React from 'react'
-import Modal from 'react-modal';
-import Food from "./Food";
+
 
 export default function FetchFoodApi() {
     const API_KEY = 'XlbmfvBoP5wat3i76hIV0RZzstoaPCp9M52WGasf'
-    const [apiData, setApiData] = useState(null);
     const [typedFood, setTypedFood] = useState(null);
     const [fetchedFood, setFetchedFood] = useState('');
     const [fetchError, setFetchError] = useState('')
-
-    function fetchFoodData() {
-
-    }
 
     const fetchData = () => {
         if (typedFood === ' ') { return }
