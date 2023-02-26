@@ -52,13 +52,13 @@ Link to app: https://meals-nutrition-tracker.netlify.app/
 
 <!-- setup -->
 ## Setup
-  - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  - This project was bootstrapped with [Vite](https://vitejs.dev/).
   
   - The project has been deployed to Netlify: try it online following the link: https://meals-nutrition-tracker.netlify.app/
 
   - To Run Locally
       - In the project directory, you can run:
-      - ### `npm start`
+      - ### `npm run dev`
       - Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
   
 <!-- usage -->
