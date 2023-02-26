@@ -41,7 +41,7 @@ Link to app: https://meals-nutrition-tracker.netlify.app/
 ## Learning Outcomes
 - The target learning outcomes are:
     - Eat enough food to build muscle and eat healthier food
-    - Get a better understanding of food nutrients in different meals, what to avoid and what is healty
+    - Get a better understanding of food nutrients in different meals, what to avoid and what to eat to build muscle
     - Practice React js
     - CSS Layouts revision
  
