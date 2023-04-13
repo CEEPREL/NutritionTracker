@@ -21,8 +21,8 @@ Link to app: https://meals-nutrition-tracker.netlify.app/
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#general-info">General Info</a></li>
     <li><a href="#app-screenshots">App Screenshots</a></li>
+    <li><a href="#general-info">General Info</a></li>
     <li><a href="#setup">Setup</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#project-status">Status</a></li>
@@ -30,6 +30,11 @@ Link to app: https://meals-nutrition-tracker.netlify.app/
 
   </ol>
 </details>
+
+ <!-- app-screenshots -->
+## App screenshots
+<img width="1781" alt="image" src="https://user-images.githubusercontent.com/78150846/212585688-22107c08-9b11-4379-a484-729eafd6d1b6.png">
+<img width="1781" alt="image" src="https://user-images.githubusercontent.com/78150846/212585934-afee6d63-f24e-4bf3-8c4b-45d7e29c1ac9.png">
 
 <!-- general-info -->
 ## General Info
@@ -44,11 +49,6 @@ Link to app: https://meals-nutrition-tracker.netlify.app/
     - Get a better understanding of food nutrients in different meals, what to avoid and what to eat to build muscle
     - Practice React js
     - CSS Layouts revision
- 
- <!-- app-screenshots -->
-## App screenshots
-<img width="1781" alt="image" src="https://user-images.githubusercontent.com/78150846/212585688-22107c08-9b11-4379-a484-729eafd6d1b6.png">
-<img width="1781" alt="image" src="https://user-images.githubusercontent.com/78150846/212585934-afee6d63-f24e-4bf3-8c4b-45d7e29c1ac9.png">
 
 <!-- setup -->
 ## Setup
